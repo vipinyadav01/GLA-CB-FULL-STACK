@@ -1,0 +1,208 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.w3-red,
+.w3-hover-red:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+.w3-black,
+.w3-hover-black:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.w3-text-red {
+  color: #ff0000;
+}
+.w3-margin {
+  margin: 16px;
+}
+.w3-padding-64 {
+  padding: 64px;
+}
+.w3-padding-32 {
+  padding: 32px;
+}
+.w3-large {
+  font-size: 18px;
+}
+.w3-jumbo {
+  margin-top: 20px;
+}
+.w3-xlarge {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+/* Hover Styles */
+.w3-hover-white:hover {
+  color: #ffffff;
+}
+.w3-hover-opacity:hover {
+  opacity: 0.6;
+}
+
+/* Navigation Bar */
+.w3-bar {
+  width: 100%;
+  max-width: 1423px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #f44336;
+  position: fixed;
+  color: #ffffff;
+  height: 51px;
+  z-index: 1000;
+}
+
+.w3-bar-item {
+  float: left;
+  width: 90px;
+  display: block;
+  padding: 12px 24px;
+  text-align: center;
+}
+
+/* Buttons */
+.w3-button,
+.custom-button {
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.w3-button {
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.w3-button:hover {
+  color: #000000;
+}
+
+.custom-button {
+  color: #ffffff;
+}
+.custom-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.custom-black {
+  color: #ffffff !important;
+  background-color: #000000 !important;
+}
+.custom-padding-large {
+  padding: 24px !important;
+}
+
+/* Custom Container */
+.custom-container {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.01em 16px;
+  overflow: visible;
+}
+
+/* Grid Layouts */
+.container1,
+.container2 {
+  display: grid;
+  align-items: center;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+.container1 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text1 img1";
+}
+.container2 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text img2";
+}
+.container1 .image1 {
+  grid-area: img1;
+  justify-self: end;
+}
+.container1 .text1 {
+  grid-area: text1;
+  justify-self: start;
+}
+
+.container1 img,
+.container2 img {
+  max-width: 70%;
+  height: 50%;
+}
+
+.container1 .text1,
+.container2 .text {
+  font-size: 20px;
+  text-align: left;
+}
+
+.container1 .image1 {
+  margin-right: 5px;
+}
+.container2 .image2 {
+  margin-left: 120px;
+}
+
+/* Icon Styles */
+.fa {
+  font-size: 24px;
+  margin: 0 8px;
+}
+
+.fa-anchor,
+.fa-coffee {
+  font-size: 48px;
+}
+
+/* Footer Styles */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 32px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container1,
+  .container2 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "text1"
+      "img1";
+  }
+
+  .container1 .image1,
+  .container2 .image2 {
+    justify-self: center;
+  }
+
+  .container1 img,
+  .container2 img {
+    max-width: 100%;
+  }
+}

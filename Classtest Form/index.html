@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LogionPage </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+
+            <form action="backed.js">
+
+                <h1>Registration Form</h1>
+                <div>
+                    <label for="name">FirstName:</label>
+                    <input type="text" placeholder="Enter your FirstName..."
+                        name="name"
+                        pattern="[a-zA-Z]+"
+                        title="Only alphabets are allowed"><br><br>
+                </div>
+
+                <div>
+                    <label for="name"> LastName:</label>
+                    <input type="text" placeholder="Enter your LastName..."
+                        name="name"
+                        pattern="[a-zA-Z]+"
+                        title="Only alphabets are allowed"><br><br>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="Enter your email..."
+                        id="email"
+                        name="email"><br><br>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" placeholder="Enter your password..."
+                        id="password" name="password"><br><br>
+                </div>
+
+                <div>
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+
+                </div>
+
+                <div>
+                    <label for="age">Age:</label>
+                    <input type="number" placeholder="Enter your age..."
+                        id="age" name="age"><br><br>
+                </div>
+                <label for="preference">preference:</label>
+                <div>
+                    <input type="radio" id="Acrylic Painting" name="preference"
+                        value="Acrylic Painting">
+                    <label for="Acrylic Painting">Acrylic Painting</label>
+                </div>
+                <div>
+                    <input type="radio" id="oil Painting" name="preference"
+                        value="oil Painting">
+                    <label for="oil Painting">Oil Painting</label>
+                </div>
+                <div>
+                    <input type="radio" id="watercolor Painting"
+                        name="preference" value="watercolor Painting">
+                    <label for="watercolor Painting">Watercolor Painting</label>
+                </div>
+
+                <div>
+                    <label for="occupation">Select occupation:</label>
+                    <select id="occupation" name="occupation">
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+                </div>
+                <div>
+                    <label for="Message">Message:</label>
+                    <textarea id="Message" placeholder="Enter your message..."
+                        name="Message"></textarea><br><br>
+                </div>
+                <div>
+                    <div
+                        style="display: flex; justify-content: space-between;"></div>
+                    <button>
+                        <input type="submit" value="Submit">
+
+                    </button>
+                    <button>
+                        <input type="reset" value="reset">
+
+                    </button>
+                </div>
+            </form>
+        </body>
+    </html>

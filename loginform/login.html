@@ -1,0 +1,186 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Login/Signup Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-box">
+        <div class="login-form">
+          <h2>Login</h2>
+          <form id="login-form">
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit">Login</button>
+          </form>
+        </div>
+        <div class="signup-form">
+          <h2>Signup</h2>
+          <form id="signup-form">
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <input type="text" placeholder="Username" required />
+            <button type="submit">Signup</button>
+          </form>
+        </div>
+        <div class="switch-box">
+          <button class="switch-btn" id="login-btn">Login</button>
+          <button class="switch-btn" id="signup-btn">Signup</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+<!-- </html>  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Information Card</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+      .card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 15px;
+        max-width: 1200px;
+        margin: 0 auto;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+      }
+      .header h2 {
+        margin: 0;
+        color: #333;
+      }
+      .info-row {
+        margin-bottom: 10px;
+      }
+      .label {
+        font-weight: bold;
+        margin-right: 5px;
+        color: #555;
+      }
+      .value {
+        color: #333;
+      }
+      .pending {
+        color: orange;
+      }
+      .carry-over {
+        color: red;
+      }
+      .regular {
+        color: green;
+      }
+      .not-yet {
+        color: #999;
+      }
+      .rankings span {
+        color: gold;
+      }
+      .rankings .label {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">
+        <h2>👤 Raj Maheshwari C/O Sanjay Maheshwari</h2>
+      </div>
+      <div class="info-row">
+        <span class="label">📘 Course & Details:</span>
+        <span class="value"
+          >B.Tech. - CS in III Semester (Section : X, Roll No. : 52), File No:
+          23-15000512, Id: 1500230512, Campus</span
+        >
+      </div>
+      <div class="info-row">
+        <span class="label">📝 Registration Status:</span>
+        <span class="value pending">Pending</span>,
+        <span class="label">Registration Type:</span>
+        <span class="value regular">Regular</span>,
+        <span class="label">Exam Status:</span>
+        <span class="value carry-over">1 Carry Over Papers</span>
+      </div>
+      <div class="info-row">
+        <span class="label">👤 Student:</span>
+        <span class="value">7060421480</span>,
+        <span class="label">👨‍👩‍👧‍👦 Father:</span>
+        <span class="value">7060421480</span>
+      </div>
+      <div class="info-row">
+        <span class="label">📧 Email ID:</span>
+        <span class="value">raj.maheshwari_cs23@gla.ac.in</span>
+      </div>
+      <div class="info-row">
+        <span class="label">🎂 DOB:</span>
+        <span class="value">07.08.2005 (Happy Birthday)</span>
+      </div>
+      <div class="info-row">
+        <span class="label">🔢 Univ Roll No.:</span>
+        <span class="value">2315001776</span>,
+        <span class="label">GLA RegNo.:</span>
+        <span class="value">GLA2023-13030013</span>
+      </div>
+      <div class="info-row">
+        <span class="label">📊 10th%:</span>
+        <span class="value">57</span>,
+        <span class="label">12th%:</span>
+        <span class="value">53.6</span>,
+        <span class="label">Cur%:</span>
+        <span class="value">64</span>,
+        <span class="label">Att%:</span>
+        <span class="value">0</span>
+      </div>
+      <div class="info-row">
+        <span class="label">🏠 Residential Status:</span>
+        <span class="value">Day Scholar</span>,
+        <span class="label">💼 Placement Status:</span>
+        <span class="value not-yet">Not Yet</span>
+      </div>
+      <div class="info-row">
+        <span class="label">ℹ️ Other Details:</span>
+        <span class="value"
+          >Gender: Male, Category: Gen, Religion: Hindu, Blood Group: B+</span
+        >
+      </div>
+      <div class="info-row">
+        <span class="label">📍 Corr. Add.:</span>
+        <span class="value">Sarai Man Singh Khirni Gate, Koil, Aligarh</span>
+      </div>
+      <div class="info-row">
+        <span class="label">🏠 Per. Add.:</span>
+        <span class="value">Sarai Man Singh Khirni Gate, Koil, Aligarh</span>
+      </div>
+      <div class="info-row rankings">
+        <span class="label">Rankings =></span>
+        <span class="label">10th:</span>
+        <span>★★★★★</span>
+        <span class="label">12th:</span>
+        <span>★★★★★</span>
+        <span class="label">Cur:</span>
+        <span>★★★★☆</span>
+        <span class="label">Attendance:</span>
+        <span>☆☆☆☆☆</span>
+      </div>
+    </div>
+  </body>
+</html>
