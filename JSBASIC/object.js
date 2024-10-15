@@ -1,12 +1,12 @@
 //object= the collection  of keys and collection object=>keys=>value=>access
 
-let person = {
-  fullname: "vipin yadav",
-  Age: 45,
-  Salary: 35,
-};
+// let person = {
+//   fullname: "vipin yadav",
+//   Age: 45,
+//   Salary: 35,
+// };
 
-let personn = new object();
+// let personn = new object();
 
 //
 //
@@ -21,9 +21,9 @@ let personn = new object();
 
 // However, if you were to declare a variable using the var keyword, like this: var personn = new object, then it would be hoisted to the top of the script. But the assignment personn = new object would still occur at the point where it is written in the code.
 
-console.log(personn); // undefined
-var person3 = new Object();
-console.log(person3); // Object {}
+// console.log(personn); // undefined
+// var person3 = new Object();
+// console.log(person3); // Object {}
 
 //
 //
