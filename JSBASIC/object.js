@@ -115,3 +115,18 @@
 // Web Storage API: allows developers to store data locally on the client-side
 // Web Workers API: allows developers to run JavaScript code in the background
 // Web Sockets API: allows developers to establish real-time communication between the client and server
+//
+//
+//
+//
+//
+// -------------------Call By Function---------------//
+//
+//
+// function fun1( fun2) {}
+// function fun2() {}
+// fun1(fun2);
+// fun1 is called, so it's added to the call stack: [fun1]
+// fun1 calls fun2, so fun2 is added to the call stack: [fun1, fun2]
+// fun2 returns, so it's removed from the call stack: [fun1]
+// fun1 returns, so it's removed from the call stack: []
