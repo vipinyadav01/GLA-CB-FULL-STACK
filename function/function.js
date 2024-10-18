@@ -29,15 +29,15 @@
 // console.log(returnedFunction());
 
 //-------------using closure-----------//
-function fun1() {
-  let a = 10;
-  let b = 20;
+// function fun1() {
+//   let a = 10;
+//   let b = 20;
 
-  function fun2() {
-    return a + b;
-  }
-  return fun2;
-}
+//   function fun2() {
+//     return a + b;
+//   }
+//   return fun2;
+// }
 
-let returnedFunction = fun1();
-console.log(returnedFunction());
+// let returnedFunction = fun1();
+// console.log(returnedFunction());
